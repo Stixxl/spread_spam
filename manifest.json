@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Spread Spam Twitch",
+  "version": "1.0",
+
+  "description": "A tool for twitch.tv to enable users to spam more efficiently :^)",
+
+  "icons": {
+    "48": "icons/spam-48.png",
+    "96": "icons/spam-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "js": ["main.js"]
+    }
+  ]
+}
